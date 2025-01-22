@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vh 8vh;
+  border-bottom: 1px solid black;
+  background-color: #423653;
+  color: white;
+  background-image: url(https://kalvium.community/images/livebooks_grid_tablet.svg);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: 2px solid rgb(51, 51, 51);
+  padding: 1vh;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  border: 2px solid #6e5a8a;
+}
+
+
+#search-div {
+  width: 30%;
+}
+
+#search-box {
+  width: 100%;
+}
+
+#register-btn {
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  background-color: white;
+  padding: 1vh 3vh;
+  font-weight: 600;
+}
+
+#register-btn:hover {
+  background-color: #6e5a8a;
+  border: 1px solid white;
+  color: white;
+}
+
+
+#all-books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5vh;
+  column-gap: 1vh;
+  margin: 0vh;
+  row-gap: 3vh;
+}
+
+.book-container {
+  width: 33vh;
+  margin: 3vh;
+  border: 1px solid #bfbfbf;
+  text-align: center;
+  padding: 2vh;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book-container:hover>h3 {
+  color: #783ec9;
+}
+
+.book-image {
+  width: 33vh;
+  height: 40vh;
+}
+
+.title {
+  margin: 0.5vh auto;
+  font-size: 14px;
+  text-align: left;
+}
+
+.authors {
+  color: rgb(101, 100, 100);
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.ratings {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.free-tag {
+  color: #47385c;
+  font-weight: 700;
+  margin: 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+}
+
+form>input,
+label {
+  margin-top: 1vh;
+}
+
+span {
+  color: red;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.form-container {
+  border: 2px solid rgb(51, 51, 51);
+  width: 27%;
+  padding: 3vh;
+  margin: 10vh auto;
+  background-color: white;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit-btn {
+  padding: 1vh;
+}
+
+.submitted {
+  color: white;
+  background-color: #059f05;
+  padding: 1vh;
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+.confirm-signup {
+  margin-top: 3vh;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #6e5a8a;
+  color: white;
+  cursor: pointer;
+}
+
+.form>h1 {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+}
+
+.form>hr {
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 3vh 2vh;
+  }
+
+  .heading>h1 {
+    font-size: 24px;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  header {
+    padding: 3vh 0.8vh;
+  }
+
+  #search-box {
+    padding: 0.5vh 1vh;
+    font-size: 10px;
+  }
+
+  #register-btn {
+    padding: 0.5vh 1vh;
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .heading>h1 {
+    font-size: 15px;
+  }
+
+  .book-container {
+    width: 25vh;
+    padding: 1.5vh;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .authors,
+  p {
+    font-size: 10px;
+  }
+
+  .book-image {
+    width: 25vh;
+    height: 30vh;
+  }
+
+  .form-container {
+    width: 70%;
+    margin: 10vh auto;
+    padding: 2vh;
+  }
+
+  .form>h1 {
+    font-size: 18px;
+  }
+
+  .form>input {
+    padding: 0.8vh;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  .confirm-signup {
+    font-size: 15px;
+  }
+}
